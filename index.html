@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>IntelMQ is a solution for CERTs to process data feeds, pastebins, tweets throught a message queue</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,26 @@
     .navbar-custom .navbar-right > li > a  {
       color: #013e56;
     }
+    .scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
   </style>
   <body>
 
@@ -55,19 +75,19 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-globe"></span> IntelMQ</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> IntelMQ-Manager</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> ContactDB</a></li>
+                <li class="page-scroll"><a href="#intelmq"><span class="glyphicon glyphicon-globe"></span> IntelMQ</a></li>
+                <li><a href="#intelmq-manager"><span class="glyphicon glyphicon-wrench"></span> IntelMQ-Manager</a></li>
+                <li><a href="#contactdb"><span class="glyphicon glyphicon-user"></span> ContactDB</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="https://github.com/certtools/intelmq">IntelMQ Github repository</a></li>
+                    <li><a href="https://github.com/certtools/intelmq-manager">IntelMQ-Manager Github repository</a></li>
+                    <li><a href="https://github.com/certtools/contactdb">ContactDB Github repository</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="https://github.com/certtools/intelmq/wiki/Data-Harmonization">Data harmonization</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="http://www.enisa.europa.eu/activities/cert/support/incident-handling-automation">ENISA - IHAP</a></li>
                   </ul>
                 </li>
               </ul>
@@ -79,7 +99,7 @@
       </div>
       <div class="col-xs-3">
             <ul class="nav navbar-nav navbar-right ">
-        <li><a href="#"><img src="assets/img/Octocat.png" height="16"> Github</a></li>
+        <li><a href="https://github.com/certtools/intelmq"><img src="assets/img/Octocat.png" height="16"> Github</a></li>
       </ul>
       </div>      
     </div>
@@ -90,7 +110,7 @@
       <div class="container">
         <h1>IntelMQ!</h1>
         <p>IntelMQ is a solution for CERTs for collecting and processing security feeds, pastebins, tweets using a message queue protocol.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg page-scroll" href="#intelmq" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
 
@@ -104,7 +124,7 @@
 
           </p>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default page-scroll" href="#intelmq" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>IntelMQ-Manager</h2>
@@ -113,7 +133,7 @@
             <span class="label label-warning">Add-on</span>
           </p>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#intelmq-manager" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>ContactDB</h2>
@@ -129,6 +149,17 @@
     </div> <!-- /container -->
 
 
+    <section class="success" id="intelmq">
+      INTELMQ<br /><br /><br /><br /><br /><br /><br /><br /><br />INTELMQ<br />INTELMQ<br />INTELMQ<br />INTELMQ<br />INTELMQ<br />
+    </section>
+
+    <section class="success" id="intelmq-manager">
+      INTELMQ-MGR<br /><br /><br /><br /><br /><br /><br /><br /><br />INTELMQ-MGR<br />
+    </section>
+
+    <section class="success" id="contactdb">
+      CONTACTDB<br /><br /><br /><br /><br /><br /><br /><br /><br />CONTACTDB<br /><br />
+    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
